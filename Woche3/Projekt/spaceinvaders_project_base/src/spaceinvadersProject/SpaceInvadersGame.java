@@ -37,7 +37,7 @@ public class SpaceInvadersGame extends GameLoop {
 	  
 	  if (currentLevel == null) {
 		//change currentlevel
-		  return new Level10(); 	  
+		  return new W9Level(); 	  
 	  } else {
 		  //else if mit current level 10
 		  return null;
