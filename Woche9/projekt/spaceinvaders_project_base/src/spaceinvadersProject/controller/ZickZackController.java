@@ -6,8 +6,8 @@ import javashooter.gameobjects.GameObject;
 public class ZickZackController extends LimitedTimeController {
     private double lastSwitchTime = 0;
     private double switchInterval = 0.5; 
-    private double xSpeed1 = -30; //speed
-    private double xSpeed2 = 30; //speed
+    private double xSpeed1 = -30;
+    private double xSpeed2 = 30; 
     private boolean useFirstSpeed = true; 
 
     public ZickZackController(double g0, double duration) {
@@ -30,6 +30,7 @@ public class ZickZackController extends LimitedTimeController {
             gameObject.setVX(xSpeed2);
         }
 
+        // Rufe die updateObject-Methode der Superklasse auf
         super.updateObject();
     }
 }
